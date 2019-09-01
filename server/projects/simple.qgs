@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="3.8.0-Zanzibar">
+<qgis version="3.8.0-Zanzibar" projectname="">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -19,20 +19,20 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer checked="Qt::Checked" providerKey="ogr" id="area_482e903e_2a5c_44d2_9676_47e3c8ebb2b8" source="./data.gpkg|layername=area" name="area" expanded="1">
+    <layer-tree-layer name="area" checked="Qt::Checked" id="area_482e903e_2a5c_44d2_9676_47e3c8ebb2b8" providerKey="ogr" expanded="1" source="./data.gpkg|layername=area">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
       <item>area_482e903e_2a5c_44d2_9676_47e3c8ebb2b8</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings enabled="1" unit="2" mode="2" tolerance="0" intersection-snapping="0" type="2">
+  <snapping-settings unit="2" mode="2" intersection-snapping="0" tolerance="0" enabled="1" type="2">
     <individual-layer-settings>
-      <layer-setting enabled="1" id="area_482e903e_2a5c_44d2_9676_47e3c8ebb2b8" tolerance="0" units="2" type="2"/>
+      <layer-setting units="2" id="area_482e903e_2a5c_44d2_9676_47e3c8ebb2b8" tolerance="0" enabled="1" type="2"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
-  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>meters</units>
     <extent>
       <xmin>2630468.48040967853739858</xmin>
@@ -58,16 +58,16 @@
   </mapcanvas>
   <projectModels/>
   <legend updateDrawingOrder="true">
-    <legendlayer checked="Qt::Checked" showFeatureCount="0" name="area" open="true" drawingOrder="-1">
+    <legendlayer name="area" checked="Qt::Checked" open="true" showFeatureCount="0" drawingOrder="-1">
       <filegroup open="true" hidden="false">
-        <legendlayerfile layerid="area_482e903e_2a5c_44d2_9676_47e3c8ebb2b8" visible="1" isInOverview="0"/>
+        <legendlayerfile layerid="area_482e903e_2a5c_44d2_9676_47e3c8ebb2b8" isInOverview="0" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
   <mapViewDocks/>
   <mapViewDocks3D/>
   <projectlayers>
-    <maplayer refreshOnNotifyEnabled="0" simplifyDrawingTol="1" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" wkbType="Polygon" geometry="Polygon" maxScale="0" simplifyDrawingHints="1" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" simplifyMaxScale="1" autoRefreshTime="0" type="vector" readOnly="0" minScale="1e+08" autoRefreshEnabled="0" labelsEnabled="0">
+    <maplayer hasScaleBasedVisibilityFlag="0" labelsEnabled="0" simplifyDrawingTol="1" simplifyLocal="1" styleCategories="AllStyleCategories" autoRefreshTime="0" refreshOnNotifyEnabled="0" maxScale="0" simplifyDrawingHints="1" readOnly="0" simplifyAlgorithm="0" geometry="Polygon" type="vector" refreshOnNotifyMessage="" wkbType="Polygon" minScale="1e+08" autoRefreshEnabled="0" simplifyMaxScale="1">
       <extent>
         <xmin>2670703.42014324991032481</xmin>
         <ymin>1077869.60710390005260706</ymin>
@@ -111,7 +111,7 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>true</geographicflag>
+            <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
         <extent/>
@@ -131,26 +131,26 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 symbollevels="0" enableorderby="0" type="singleSymbol" forceraster="0">
+      <renderer-v2 forceraster="0" symbollevels="0" enableorderby="0" type="singleSymbol">
         <symbols>
-          <symbol alpha="1" clip_to_extent="1" name="0" force_rhr="0" type="fill">
-            <layer class="SimpleFill" enabled="1" locked="0" pass="0">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="213,180,60,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol name="0" force_rhr="0" clip_to_extent="1" alpha="1" type="fill">
+            <layer pass="0" locked="0" class="SimpleFill" enabled="1">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="213,180,60,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option name="name" value="" type="QString"/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option name="type" value="collection" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -163,7 +163,7 @@
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
         <activeChecks type="StringList">
           <Option value="" type="QString"/>
         </activeChecks>
@@ -186,28 +186,28 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias index="0" field="fid" name=""/>
-        <alias index="1" field="Name" name=""/>
+        <alias name="" field="fid" index="0"/>
+        <alias name="" field="Name" index="1"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="fid" expression="" applyOnUpdate="0"/>
-        <default field="Name" expression="" applyOnUpdate="0"/>
+        <default applyOnUpdate="0" field="fid" expression=""/>
+        <default applyOnUpdate="0" field="Name" expression=""/>
       </defaults>
       <constraints>
-        <constraint unique_strength="1" exp_strength="0" constraints="3" field="fid" notnull_strength="1"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" field="Name" notnull_strength="0"/>
+        <constraint notnull_strength="1" exp_strength="0" field="fid" unique_strength="1" constraints="3"/>
+        <constraint notnull_strength="0" exp_strength="0" field="Name" unique_strength="0" constraints="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint exp="" field="fid" desc=""/>
-        <constraint exp="" field="Name" desc=""/>
+        <constraint exp="" desc="" field="fid"/>
+        <constraint exp="" desc="" field="Name"/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
+      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
         <columns/>
       </attributetableconfig>
       <conditionalstyles>

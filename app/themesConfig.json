@@ -58,7 +58,19 @@
         "scales": [80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
           "mapCrs": "EPSG:2056",
           "searchProviders": [],
-          "additionalMouseCrs": ["EPSG:2056"]
+          "additionalMouseCrs": ["EPSG:2056"],
+        "backgroundLayers": [
+          {
+            "name": "mapnik",
+            "printLayer": "osm_farbig",
+            "visibility": true
+          },
+            {
+                "name": "pixelkarte",
+                "visibility": true
+              }
+            
+        ]          
       } 
         
     ],
