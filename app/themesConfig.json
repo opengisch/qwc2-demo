@@ -51,7 +51,7 @@
           "additionalMouseCrs": ["EPSG:2056"]
       },
       {
-          "url": "http://localhost/ows/offline_bees",
+          "url": "http://localhost/ows/citybees",
           "format": "image/png",
         "attribution": "opengis.ch",
         "attributionUrl": "https:/opengis.ch/",
