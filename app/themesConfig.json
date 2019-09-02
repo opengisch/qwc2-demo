@@ -2,45 +2,6 @@
   "themes": {
     "items": [
       {
-        "url": "http://qwc2.sourcepole.ch/wms/wolfsburg/qwc2_demo",
-        "attribution": "Stadt Wolfsburg",
-        "attributionUrl": "https://geoportal.stadt.wolfsburg.de/",
-        "format": "image/png; mode=8bit",
-        "default": true,
-        "scales": [200000, 80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
-        "backgroundLayers": [
-          {
-            "name": "mapnik",
-            "printLayer": "osm_farbig",
-            "visibility": true
-          }
-        ],
-        "searchProviders": ["coordinates", "wolfsburg"],
-        "mapCrs": "EPSG:3857",
-        "additionalMouseCrs": ["EPSG:25832", "EPSG:32632"],
-        "collapseLayerGroupsBelowLevel": 1
-      },
-      {
-        "url": "http://qwc2.sourcepole.ch/wms/uster/bauprojekte",
-        "attribution": "Stadt Uster",
-        "attributionUrl": "https://gis.uster.ch/",
-        "scales": [80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
-        "printScales": [80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
-        "printResolutions": [150, 300, 600],
-        "backgroundLayers": [
-          {
-            "name": "mapnik",
-            "visibility": true
-          },
-          {
-            "name": "opentopomap"
-          }
-        ],
-        "searchProviders": ["coordinates", "uster"],
-        "mapCrs": "EPSG:3857",
-        "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"]
-      },
-      {
           "url": "http://localhost/ows/simple",
           "format": "image/png",
           "attribution": "opengis.ch",
@@ -53,150 +14,24 @@
       {
           "url": "http://localhost/ows/citybees",
           "format": "image/png",
-        "attribution": "opengis.ch",
-        "attributionUrl": "https:/opengis.ch/",
-        "scales": [80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
+          "attribution": "opengis.ch",
+          "attributionUrl": "https:/opengis.ch/",
+          "scales": [80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 500, 250, 100],
           "mapCrs": "EPSG:2056",
           "searchProviders": [],
           "additionalMouseCrs": ["EPSG:2056"],
-        "backgroundLayers": [
+          "backgroundLayers": [
           {
-            "name": "mapnik",
-            "printLayer": "osm_farbig",
-            "visibility": true
+              "name": "mapnik",
+              "printLayer": "osm_farbig",
+              "visibility": true
           },
-            {
-                "name": "pixelkarte",
-                "visibility": true
-              }
-            
+          {
+              "name": "pixelkarte",
+              "visibility": true
+          }
         ]          
       } 
-        
-    ],
-    "groups": [
-      {
-        "title": "Dev Tests",
-        "items": [
-          {
-            "title": "QWC2 Test",
-            "url": "http://qwc2.sourcepole.ch/wms/themes/test",
-            "attribution": "Demo attribution",
-            "attributionUrl": "https://127.0.0.1/",
-            "tiled": true,
-            "backgroundLayers": [
-              {
-                "name": "mapnik",
-                "visibility": true
-              },
-              {
-                "name": "Night2012"
-              },
-              {
-                "name": "StamenToner"
-              },
-              {
-                "name": "StamenWatercolor"
-              },
-              {
-                "name": "Gemeindegrenzen"
-              },
-              {
-                "name": "bluemarble"
-              }
-            ],
-            "searchProviders": ["coordinates", "geoadmin", "glarus"],
-            "mapCrs": "EPSG:4326",
-            "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"],
-            "printLabelForSearchResult": "test",
-            "watermark": {
-              "text": "Watermark Test",
-              "texpadding": "1",
-              "fontsize": "14",
-              "fontfamily": "sans",
-              "fontcolor": "#0000FF",
-              "backgroundcolor": "#FFFFFF",
-              "framecolor": "#000000",
-              "framewidth": 1
-            },
-            "skipEmptyFeatureAttributes": true
-          },
-          {
-            "title": "QWC2 Test 2056",
-            "url": "http://qwc2.sourcepole.ch/wms/themes/test",
-            "attribution": "Demo attribution",
-            "attributionUrl": "https://127.0.0.1/",
-            "tiled": true,
-            "backgroundLayers": [
-              {
-                "name": "pixelkarte",
-                "visibility": true
-              }
-            ],
-            "searchProviders": ["coordinates", "geoadmin", "glarus"],
-            "featureReport": {
-              "a": "template_a",
-              "b": "template_b"
-            },
-            "mapCrs": "EPSG:2056",
-            "additionalMouseCrs": ["EPSG:21781", "EPSG:2056"],
-            "printLabelForSearchResult": "test",
-            "watermark": {
-              "text": "Watermark Test",
-              "texpadding": "1",
-              "fontsize": "14",
-              "fontfamily": "sans",
-              "fontcolor": "#0000FF",
-              "backgroundcolor": "#FFFFFF",
-              "framecolor": "#000000",
-              "framewidth": 1
-            },
-            "skipEmptyFeatureAttributes": true,
-            "editConfig": "test2056_edit.json",
-            "extraLegendParameters": "&LAYERTITLE=FALSE"
-          },
-          {
-            "title": "QGIS.org QGIS Server Demo",
-            "url": "http://qgis4.qgis.org:8081/qgisserver_demo",
-            "attribution": "QGIS.org",
-            "attributionUrl": "https://qgis.org",
-            "backgroundLayers": [
-              {
-                "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS",
-                "visibility": true
-              },
-              {
-                "name": "mapnik"
-              }
-            ],
-            "searchProviders": ["coordinates"],
-            "mapCrs": "EPSG:3857",
-            "scales": [
-              591658710.9091312,
-              295829355.4545656,
-              147914677.7272828,
-              73957338.8636414,
-              36978669.4318207,
-              18489334.71591035,
-              9244667.357955175,
-              4622333.678977587,
-              2311166.8394887936,
-              1155583.4197443968,
-              577791.7098721984,
-              288895.8549360992,
-              144447.9274680496,
-              72223.9637340248,
-              36111.9818670124,
-              18055.9909335062,
-              9027.9954667531,
-              4513.99773337655
-            ]
-          }
-        ],
-        "groups": [
-
-        ]
-      }
     ],
     "backgroundLayers": [
       {
