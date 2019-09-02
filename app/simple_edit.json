@@ -1,0 +1,24 @@
+{
+    "area": {
+        "layerName": "area",
+        "geomType": "Polygon",
+        "fields": [
+            {
+                "id": "fid",
+                "name": "fid",
+                "type": "number",
+                "constraints": {
+                    "required": true
+                }
+            },
+            {
+                "id": "Name",
+                "name": "Name",
+                "type": "text",
+                "constraints": {
+                    "maxLength": 10
+                }
+            }
+        ]
+    }
+}
